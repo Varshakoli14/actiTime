@@ -1,0 +1,15 @@
+public WebDriver driver;
+	@Test
+	@Parameters
+	public void actiTime(String Browsers) {
+		if (Browsers.equals("Chrome")) {
+			driver =new ChromeDriver();
+			
+		}
+		else {
+			if (Browsers.equals("Microsoft edge")) {
+				driver =new EdgeDriver();
+				
+			}
+			driver.get("https://www.facebook.com/");
+		}
